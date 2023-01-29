@@ -1,0 +1,36 @@
+.container{
+    background-color: white;
+    border: 2px black solid;
+    width: 30%;
+    height: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+label ,input {
+    display: block;
+}
+
+input ,label , p{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    background: lightgray;
+    border-radius: 5px;
+    height: 7px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: grey;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+  }

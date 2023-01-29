@@ -1,0 +1,28 @@
+
+.container img{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+.container img:hover{
+    opacity: 0;
+}
+
+.container span{
+    display: inline-block;
+    padding-top: 15px;
+    width: 200px;
+    height: 30px;
+    border-radius:50%;
+    background-color: cyan;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.container span:hover{
+    background-color: pink;
+    box-shadow: 10px 10px 5px lightblue;
+}
