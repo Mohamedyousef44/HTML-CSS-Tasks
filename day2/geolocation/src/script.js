@@ -1,5 +1,6 @@
 let btn = document.getElementById('btn');
 let para = document.getElementById('main');
+let div = document.getElementById('maps');
 
 btn.addEventListener('click',getLocation);
 
@@ -17,7 +18,7 @@ function showPosition(p){
     let lat = p.coords.latitude;
     let acc = p.coords.accuracy
     para.innerText = `longtiude: ${long}\nlatitude: ${lat}\naccuracy:${acc}`;
-    location.assign("http://maps.google.com/maps?q" + lat + ",+" + long);
+    div.innerHTML = location.assign("http://maps.google.com/maps?q" + lat + ",+" + long);
 }
 
 function showError(error){
